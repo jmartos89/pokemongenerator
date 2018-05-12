@@ -1,17 +1,12 @@
 version: '2'
 
 services:
-    db:
-        container_name: pokemon_generator-db
-        image: mysql
-        volumes:
-            - "./.data/db:/var/lib/mysql"
+    dbserver:
+        container_name: pokemon_generator-dbserver
         networks: [staging]
-        environment:
-            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-            MYSQL_DATABASE: ${MYSQL_DATABASE}
-            MYSQL_USER: ${MYSQL_USER}
-            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+        build: dbserver
+        volumes:
+            - db_dir:/var/lib/mysql
     php:
         container_name: pokemon_generator-php
         build:
@@ -38,6 +33,10 @@ services:
             - "php"
         volumes:
             - ./logs/nginx/:/var/log/nginx
+
+volumes:
+    db_dir:
+
 networks:
     staging:
         driver: bridge
