@@ -1,0 +1,46 @@
+version: '2'
+
+services:
+    db:
+        container_name: pokemon_generator-db
+        image: mysql
+        volumes:
+            - "./.data/db:/var/lib/mysql"
+        networks: [staging]
+        environment:
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    php:
+        container_name: pokemon_generator-php
+        build:
+            context: php7-fpm
+            args:
+                TIMEZONE: ${TIMEZONE}
+        networks: [staging]
+        ports:
+            - "9000:9000"
+        volumes:
+            - ${SYMFONY_APP_PATH}:/home/apps/symfony
+            - ./logs/symfony:/home/apps/symfony/app/logs
+    nginx:
+        container_name: pokemon_generator-nginx
+        build: nginx
+        networks: [staging]
+        environment:
+            SYMFONY_DOMAIN: ${SYMFONY_DOMAIN}
+        ports:
+            - 2050:80
+        volumes_from:
+            - php
+        links:
+            - "php"
+        volumes:
+            - ./logs/nginx/:/var/log/nginx
+networks:
+    staging:
+        driver: bridge
+        ipam:
+            driver: default
+            config: [subnet: 192.168.50.0/24]
