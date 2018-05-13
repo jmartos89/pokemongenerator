@@ -21,6 +21,15 @@ class PokemonCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln('Pokemon!');
+        $pokemon = file_get_contents('http://pokeapi.co/api/v2/pokemon/1');
+
+        $pokemon = json_decode($pokemon,true);
+
+        $name = $pokemon['name'];
+        
+
+        var_dump($name);
+
+        //$output->writeln('Pokemon!');
     }
 }
