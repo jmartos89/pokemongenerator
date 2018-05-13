@@ -2,7 +2,7 @@
 
 namespace AppBundle\Command;
 
-use Symfony\Component\Console\Command\Command;
+use Doctrine\ORM\EntityManager;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use AppBundle\Entity\Pokemon;
@@ -11,6 +11,8 @@ use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 
 class PokemonCommand extends ContainerAwareCommand
 {
+    const MAX_POKEMON_NUMBER = 151;
+
     protected function configure()
     {
         $this
@@ -24,35 +26,34 @@ class PokemonCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-
         $doctrine = $this->getContainer()->get('doctrine');
 
+        /** @var EntityManager $entityManager */
         $entityManager = $doctrine->getEntityManager();
 
+        for ($i = 1; $i <= PokemonCommand::MAX_POKEMON_NUMBER; $i++) {
 
+            $url = sprintf('http://pokeapi.co/api/v2/pokemon/%s', $i);
+            $pokemonContent = file_get_contents($url);
 
-        for ($i=1; $i <=151 ; $i++) {
+            $pokemonInfo = json_decode($pokemonContent, true);
 
-            $pokemoncontent = file_get_contents('http://pokeapi.co/api/v2/pokemon/'.$i);
+            if (isset($pokemonInfo['name'])) {
+                $name = $pokemonInfo['name'];
 
-            $pokemoncontent = json_decode($pokemoncontent,true);
+                $pokemon = new Pokemon();
 
-            $name = $pokemoncontent['name'];
+                $pokemon->setName($name);
+                $pokemon->setNumber($i);
 
-            $pokemon = new Pokemon();
+                $entityManager->persist($pokemon);
 
-            $pokemon->setName($name);
+                $message = sprintf('Adding #%s %s... ', $i, $name);
 
-            $pokemon->setNumber($i);
-
-            $entityManager->persist($pokemon);
-
-            $entityManager->flush();
+                $output->writeln($message);
+            }
         }
-        
-        
 
-
-        //$output->writeln('Pokemon!');
+        $entityManager->flush();
     }
 }
