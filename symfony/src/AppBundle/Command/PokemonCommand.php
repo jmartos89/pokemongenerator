@@ -5,8 +5,11 @@ namespace AppBundle\Command;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use AppBundle\Entity\Pokemon;
+use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 
-class PokemonCommand extends Command
+
+class PokemonCommand extends ContainerAwareCommand
 {
     protected function configure()
     {
@@ -21,14 +24,34 @@ class PokemonCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $pokemon = file_get_contents('http://pokeapi.co/api/v2/pokemon/1');
 
-        $pokemon = json_decode($pokemon,true);
+        $doctrine = $this->getContainer()->get('doctrine');
 
-        $name = $pokemon['name'];
+        $entityManager = $doctrine->getEntityManager();
+
+
+
+        for ($i=1; $i <=151 ; $i++) {
+
+            $pokemoncontent = file_get_contents('http://pokeapi.co/api/v2/pokemon/'.$i);
+
+            $pokemoncontent = json_decode($pokemoncontent,true);
+
+            $name = $pokemoncontent['name'];
+
+            $pokemon = new Pokemon();
+
+            $pokemon->setName($name);
+
+            $pokemon->setNumber($i);
+
+            $entityManager->persist($pokemon);
+
+            $entityManager->flush();
+        }
+        
         
 
-        var_dump($name);
 
         //$output->writeln('Pokemon!');
     }
