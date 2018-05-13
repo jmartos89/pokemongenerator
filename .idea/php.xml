@@ -40,6 +40,7 @@
       <path value="$PROJECT_DIR$/symfony/vendor/fig/link-util" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/symfony/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/symfony/vendor/j7mbo/twitter-api-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.5.0" />

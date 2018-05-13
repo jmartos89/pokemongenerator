@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ee2c6bb-8a7e-48e6-bed6-bc79f1466615" name="Default" comment="">
+    <list default="true" id="5592a090-d654-436c-8c91-c4d412c6838a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/docker/dbserver/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docker/dbserver/config/my.cnf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docker/dbserver/config/mysqld.cnf" />
+      <change beforePath="$PROJECT_DIR$/docker/README.md" afterPath="" />
       <change beforePath="$PROJECT_DIR$/docker/doc/custom.md" afterPath="" />
       <change beforePath="$PROJECT_DIR$/docker/doc/schema.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/docker/doc/schema.pptx" afterPath="" />
@@ -14,6 +18,44 @@
       <change beforePath="$PROJECT_DIR$/docker/nginx/symfony.conf" afterPath="$PROJECT_DIR$/docker/nginx/symfony.conf" />
       <change beforePath="$PROJECT_DIR$/docker/php7-fpm/Dockerfile" afterPath="$PROJECT_DIR$/docker/php7-fpm/Dockerfile" />
     </list>
+    <ignored path="$PROJECT_DIR$/symfony/vendor/composer/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/annotations/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/cache/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/collections/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/common/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/dbal/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/doctrine-bundle/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/doctrine-cache-bundle/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/inflector/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/instantiator/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/lexer/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/doctrine/orm/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/fig/link-util/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/incenteev/composer-parameter-handler/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/jdorn/sql-formatter/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/monolog/monolog/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/paragonie/random_compat/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/psr/cache/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/psr/container/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/psr/link/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/psr/log/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/psr/simple-cache/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/sensio/distribution-bundle/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/sensio/framework-extra-bundle/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/sensio/generator-bundle/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/sensiolabs/security-checker/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/swiftmailer/swiftmailer/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/monolog-bundle/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/phpunit-bridge/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/polyfill-apcu/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/polyfill-intl-icu/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/polyfill-mbstring/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/polyfill-php56/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/polyfill-php70/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/polyfill-util/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/swiftmailer-bundle/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/symfony/symfony/" />
+    <ignored path="$PROJECT_DIR$/symfony/vendor/twig/twig/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,76 +63,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings">
     <pharConfigPath>$PROJECT_DIR$/symfony/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docker/php7-fpm/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/nginx/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="symfony.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/nginx/symfony.conf">
+      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nginx.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/nginx/nginx.conf">
+      <file leaf-file-name="TwitterService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Service/TwitterService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="symfony.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/php7-fpm/symfony.ini">
+      <file leaf-file-name="TwitterCommand.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Command/TwitterCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+              <folding>
+                <element signature="e#37#74#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/app/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/.env">
+      <file leaf-file-name="parameters.yml.dist" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/app/config/parameters.yml.dist">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            <state relative-caret-position="375">
+              <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -100,10 +124,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cryp</find>
+      <find>fox</find>
     </findStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$/docker/php7-fpm</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -112,11 +136,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/docker/.env" />
-        <option value="$PROJECT_DIR$/docker/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/docker/nginx/symfony.conf" />
-        <option value="$PROJECT_DIR$/docker/nginx/Dockerfile" />
-        <option value="$PROJECT_DIR$/docker/php7-fpm/Dockerfile" />
+        <option value="$PROJECT_DIR$/symfony/src/AppBundle/Command/PokemonCommand.php" />
+        <option value="$PROJECT_DIR$/symfony/src/AppBundle/Service/NameConverterService.php" />
+        <option value="$PROJECT_DIR$/symfony/src/AppBundle/Command/ConverterCommand.php" />
+        <option value="$PROJECT_DIR$/symfony/src/AppBundle/Service/ConverterService.php" />
+        <option value="$PROJECT_DIR$/symfony/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/symfony/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/symfony/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/symfony/src/AppBundle/Service/TwitterService.php" />
+        <option value="$PROJECT_DIR$/symfony/src/AppBundle/Command/TwitterCommand.php" />
       </list>
     </option>
   </component>
@@ -125,6 +153,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
@@ -166,43 +197,15 @@
       <path value="$PROJECT_DIR$/symfony/vendor/fig/link-util" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/symfony/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/symfony/vendor/j7mbo/twitter-api-php" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1290" />
-    <option name="y" value="44" />
-    <option name="width" value="1830" />
-    <option name="height" value="990" />
+    <option name="x" value="1539" />
+    <option name="y" value="162" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Code StylePHP</id>
-          </State>
-          <State>
-            <id>Control flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>PHP</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>PhpCSValidationInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -218,8 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,24 +236,66 @@
             <path>
               <item name="pokemon_generator" type="b2602c69:ProjectViewProjectNode" />
               <item name="pokemon_generator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="nginx" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pokemon_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemon_generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pokemon_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemon_generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pokemon_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemon_generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pokemon_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemon_generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pokemon_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemon_generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Command" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pokemon_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemon_generator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="com.intellij.profile.codeInspection.ui.ProjectInspectionToolsConfigurableProvider" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/symfony/src/AppBundle/Command" />
+      <recent name="$PROJECT_DIR$/symfony/src/AppBundle" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -274,34 +317,34 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0ee2c6bb-8a7e-48e6-bed6-bc79f1466615" name="Default" comment="" />
-      <created>1526139925576</created>
+      <changelist id="5592a090-d654-436c-8c91-c4d412c6838a" name="Default" comment="" />
+      <created>1526147991121</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1526139925576</updated>
-      <workItem from="1526139926856" duration="601000" />
+      <updated>1526147991121</updated>
+      <workItem from="1526147992339" duration="4914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="601000" />
+    <option name="totallyTimeSpent" value="4914000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1290" y="44" width="1830" height="990" extended-state="0" />
+    <frame x="1539" y="162" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15751211" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -321,39 +364,33 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docker/.env">
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Command/PokemonCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Command/ConverterCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="540">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#37#76#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Service/ConverterService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/php7-fpm/symfony.pool.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker/php7-fpm/symfony.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker/nginx/nginx.conf">
+    <entry file="file://$PROJECT_DIR$/symfony/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -361,27 +398,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/nginx/symfony.conf">
+    <entry file="file://$PROJECT_DIR$/symfony/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/nginx/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/symfony/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        <state relative-caret-position="542">
+          <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/php7-fpm/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Service/TwitterService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Command/TwitterCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="e#37#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

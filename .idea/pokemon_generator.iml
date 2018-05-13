@@ -18,6 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/doctrine/orm" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/fig/link-util" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/incenteev/composer-parameter-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/j7mbo/twitter-api-php" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/jdorn/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/paragonie/random_compat" />
