@@ -26,14 +26,12 @@ class ImagePokemonCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-
         for ($i = 1; $i <= PokemonCommand::MAX_POKEMON_NUMBER; $i++) {
-
-            $imageName = sprintf('%s.png',str_pad($i, 3, "0", STR_PAD_LEFT)); 
+            $imageName = sprintf('%s.png', str_pad($i, 3, "0", STR_PAD_LEFT)); 
 
             $downloadUrl = sprintf('https://assets.pokemon.com/assets/cms2/img/pokedex/full/%s', $imageName);
 
-            $saveUrl = sprintf('web/images/%s', $imageName);
+            $saveUrl = sprintf('web/images/pokemon/%s', $imageName);
 
             $pokemonImage = file_get_contents($downloadUrl);
 
